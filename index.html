@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8" />
@@ -8,6 +8,12 @@
 	<title>Расчет стоимости проекта</title>
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/checkbox.css" />
+	<link rel="stylesheet" href="css/radio.css" />
+	<link rel="stylesheet" href="css/rang.css" />
+	<link rel="stylesheet" href="css/button.css" />
+	<link rel="stylesheet" href="css/themes.css" />
+	<link rel="stylesheet" href="css/adaptive.css" />
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap"
@@ -16,11 +22,14 @@
 
 <body>
 	<main class="calc-wrapper">
+		<button class="btn"></button>
+		<button class="themes"></button>
 		<div class="container">
 			<div id="form">
 				<div class="heading">
 					<h1 class="heading-title">Калькулятор стоимости ремонта</h1>
 					<p class="heading-desc">Базовая цена: 1 м² = 6 тыс. рублей</p>
+
 				</div>
 				<div class="box-shadows">
 					<!-- Площадь -->
@@ -35,8 +44,8 @@
 							<span>0</span>
 							<span>200</span>
 						</div>
-						<input type="range" id="square-range" class="range-input" min="0" max="200" value="0"
-							placeholder="0" step="1" />
+						<input type="range" id="square-range" class="styled-slider slider-progress range-input" min="0"
+							max="200" value="0" placeholder="0" step="1" />
 					</div>
 					<!-- // Площадь -->
 
@@ -165,6 +174,9 @@
 	</main>
 
 	<script src="js/main.js"></script>
+	<script src="js/background_visibility.js"></script>
+	<script src="js/themes.js"></script>
+	<script src="js/slider-progress.js"></script>
 </body>
 
 </html>

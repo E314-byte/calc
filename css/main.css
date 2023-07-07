@@ -2,34 +2,14 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	color: white;
 	margin: 0;
 	padding-bottom: 140px;
-	background-color: #222c65;
+	/* background: #fff3e6;	 */
+	background-image: url('https://bitovkileto.ru/wp-content/uploads/d/3/c/d3c5f2b64b0680a52d2d271d85f3268c.jpeg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover; 
 }
-
-/* Работает в Firefox */
-* {
-	scrollbar-width: thin;
-	scrollbar-color: #222C65 #222C65;
-}
-
-/* Работает в Chrome, Edge и Safari */
-*::-webkit-scrollbar {
-	width: 13px;
-}
-
-*::-webkit-scrollbar-track {
-	background: #1B284F;
-}
-
-*::-webkit-scrollbar-thumb {
-	background-color: #273586;
-	border-radius: 10px;
-	/* border: 3px solid #222C65; */
-}
-
-
 
 img {
 	max-width: 100%;
@@ -99,65 +79,7 @@ img {
 	}
 }
 
-/* ------------------- Footer ------------------- */
 
-.footer {
-	padding-top: 5px;
-	padding-bottom: 30px;
-}
-
-.footer-cta-title {
-	font-size: 42px;
-	font-weight: 700;
-	letter-spacing: 0.5px;
-	margin-bottom: 25px;
-	display: inline-block;
-}
-
-.footer-text {
-	margin: 0;
-	font-size: 18px;
-	font-weight: 400;
-	letter-spacing: 0.43px;
-}
-
-.footer-text a {
-	color: #4298e8;
-	text-decoration: underline;
-}
-
-.footer-cta-text {
-	margin: 0;
-	font-size: 36px;
-	font-weight: 100;
-	letter-spacing: 0.43px;
-}
-
-.footer-cta-text a {
-	color: #4298e8;
-	text-decoration: underline;
-}
-
-/* Для экранов с шириной от 0 до 1170px */
-@media (max-width: 1170px) {
-	.footer-cta-title {
-		font-size: 26px;
-		margin-bottom: 15px;
-	}
-
-	.footer-cta-text {
-		font-size: 22px;
-	}
-}
-
-.footer-inner {
-	text-align: center;
-	padding-bottom: 80px;
-}
-
-.text-center {
-	text-align: center;
-}
 
 /* Calc */
 
@@ -198,12 +120,12 @@ h6 {
 
 .calc-section {
 	padding: 40px 50px;
-	background-color: #283c76;
+	background-color: #fff3e6;
 }
 
 .calc-section:nth-child(odd) {
 	padding: 40px 50px;
-	background-color: #1b284f;
+	background-color: #E1D5C8 ;
 }
 
 .calc-title-light {
@@ -271,7 +193,7 @@ h6 {
 	border: none;
 	font-size: 24px;
 	font-weight: 700;
-	color: #202e84;
+	color: #000;
 	text-align: center;
 	outline: none;
 }
@@ -282,13 +204,13 @@ input::-webkit-inner-spin-button {
 	margin: 0;
 }
 
-.input-wrapper .input-short:first-child {
+/* .input-wrapper .input-short:first-child {
 	margin-right: 20px;
 }
 
 .input-wrapper .input-short:last-child {
 	margin-left: 20px;
-}
+} */
 
 /* ------------ TYPO ------------ */
 
@@ -312,12 +234,12 @@ input::-webkit-inner-spin-button {
 
 .note {
 	display: block;
-	font-weight: 300;
+	font-weight: 400;
 	font-style: italic;
 	padding-top: 10px;
 	padding-left: 5px;
 	font-size: 16px;
-	color: #c1c1c1;
+	color: #989898;
 }
 
 /* ------------ FORMS ------------ */
@@ -334,15 +256,13 @@ input::-webkit-inner-spin-button {
 /* ------------ PRICE ------------ */
 .calc-price {
 	padding: 30px 50px;
-	/* border: 10px solid #7ac5ea; */
 
 	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	background-color: rgb(218, 243, 255);
-	background-color: #1b284f;
-	/* box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1); */
+	background-color: #E1D5C8;
 }
 
 .calc-price-title {
@@ -357,7 +277,8 @@ input::-webkit-inner-spin-button {
 }
 
 .hidden {
-	display: none;
+	/* display: none; */
+	visibility: hidden;
 }
 
 .scope{
@@ -368,6 +289,7 @@ input::-webkit-inner-spin-button {
 .range-input {
 	width: 100%;
 }
+
 
 
 .rooms-wrapper {
@@ -387,75 +309,14 @@ input::-webkit-inner-spin-button {
 	margin: 0;
 }
 
-  /* для элемента input c type="radio" */
-.radio {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-  }
-
-  /* для элемента div связанного с .custom-radio */
-.radio+div {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-  }
-
-  /* создание в div псевдоэлемента  before со следующими стилями */
-.radio+div::before {
-    content: '';
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1.5px solid white;
-    border-radius: 50%;
-    margin-right: 0.5em;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-  }
-
-  /* стили при наведении курсора на радио */
-.radio:not(:disabled):not(:checked)+div:hover::before {
-    border-color: #b3d7ff;
-  }
-
-  /* стили для активной радиокнопки (при нажатии на неё) */
-.radio:not(:disabled):active+div::before {
-    background-color: #b3d7ff;
-    border-color: #b3d7ff;
-  }
-
-  /* стили для радиокнопки, находящейся в фокусе */
-.radio:focus+div::before {
-	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.545);
-  }
-
-  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-.radio:focus:not(:checked)+div::before {
-    border-color: #80bdff;
-  }
-
-  /* стили для радиокнопки, находящейся в состоянии checked */
-.radio:checked+div::before {
-    border-color: #223BA3;
-    background-color: #223BA3;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-  }
-
-  /* стили для радиокнопки, находящейся в состоянии disabled */
-.radio:disabled+div::before {
-    background-color: #e9ecef;
-  }
+ 
 
 
 .rooms-radio-fake {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
-	background-color: #101837;
+	background-color: #e1d5c8;
 	text-align: center;
 	line-height: 50px;
 	font-size: 22px;
@@ -465,5 +326,5 @@ input::-webkit-inner-spin-button {
 }
 
 .rooms-radio-real:checked + .rooms-radio-fake {
-		background-color: #223ba3;
+		background-color: #cabdaf;
 }

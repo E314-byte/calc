@@ -13,7 +13,7 @@ const floor = document.querySelector('input[name="floor"]')
 const basePrice = 6000;
 const totalPriceElement = document.querySelector('#total-price');
 
-//огпраничение ввода у поле с числом 
+//огпраничение ввода у поле с числом (пока не получил то что хотел)
 squreInput.oninput = function () {
     this.value = this.value.substring(0, 3)
 }
@@ -88,4 +88,3 @@ for (const input of inputs) {
         calc();
     });
 };
-

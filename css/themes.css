@@ -1,0 +1,107 @@
+.dark-theme{
+    background: #283c76;
+    color: white;
+}
+
+.input-short--dark{
+    width: 67px;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #283c76;
+    text-align: center;
+    outline: none;
+}
+
+.calc-section--dark {
+    padding: 40px 50px;
+    background-color: #283c76;
+}
+
+.calc-section--dark:nth-child(odd) {
+    padding: 40px 50px;
+    background-color: #1b284f;
+}
+
+.rooms-radio-fake--dark{
+    background-color: #223ba3;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.rooms-radio-real:checked+.rooms-radio-fake--dark {
+    background-color: #162c83;
+}
+
+
+.note--dark{
+    display: block;
+    font-weight: 400;
+    font-style: italic;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 16px;
+    color: #c1c1c1;
+}
+
+
+/* Работает в Firefox */
+.light-theme * {
+    scrollbar-width: thin;
+    /* scrollbar-color: #222C65 #222C65; */
+    scrollbar-color: #fff3e6 #ecccaa;
+}
+
+/* Работает в Chrome, Edge и Safari */
+.light-theme *::-webkit-scrollbar {
+    width: 13px;
+}
+
+.light-theme *::-webkit-scrollbar-track {
+    /* background: transparent; */
+    /* background: #1B284F; */
+    background: #fff3e6;
+
+}
+
+.light-theme *::-webkit-scrollbar-thumb {
+    /* background-color: #273586; */
+    background-color: #ecccaa;
+    border-radius: 10px;
+    /* border: 3px solid #222C65; */
+}
+
+/* Работает в Firefox */
+.dark-theme * {
+    scrollbar-width: thin;
+    scrollbar-color: #222C65 #222C65;
+    /* scrollbar-color: #fff3e6 #ecccaa; */
+}
+
+/* Работает в Chrome, Edge и Safari */
+.dark-theme *::-webkit-scrollbar {
+    width: 13px;
+}
+
+.dark-theme *::-webkit-scrollbar-track {
+    /* background: transparent; */
+    background: #1B284F;
+    /* background: #fff3e6; */
+
+}
+
+.dark-theme *::-webkit-scrollbar-thumb {
+    background-color: #273586;
+    /* background-color: #ecccaa; */
+    border-radius: 10px;
+    /* border: 3px solid #222C65; */
+}

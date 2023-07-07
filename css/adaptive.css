@@ -1,0 +1,25 @@
+@media (max-width: 1170px){
+.rooms-wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.rooms-label{
+    margin-bottom: 5px;
+}
+
+.radio+div{
+    display: block;
+}
+.checkbox-wrapper{
+    align-items: center;
+}
+
+.calc-price-title {
+    font-size: 25px;
+}
+
+}

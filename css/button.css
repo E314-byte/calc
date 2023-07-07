@@ -1,0 +1,53 @@
+.btn{
+    content: " ";
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-image: url('../img/icon/eye.png');
+    background-size: cover;
+    /* background: ; */
+    
+    margin-left: 1200px;
+    margin-bottom: 40px;
+
+    cursor: pointer;
+}
+
+.themes{
+    content: " ";
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-image: url('../img/icon/moon.png');
+    background-size: cover;
+    /* background: ; */
+
+    margin-left: 1200px;
+    margin-bottom: 40px;
+
+    cursor: pointer;
+}
+
+/* может стоит перенести в файл themes.css, там же тёмное? */
+.themes--dark {
+    content: " ";
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-image: url('../img/icon/sun.png');
+    background-size: cover;
+    /* background: ; */
+
+    margin-left: 1200px;
+    margin-bottom: 40px;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
