@@ -15,7 +15,7 @@ const themes = document.querySelector('.themes');
 
 
 themes.addEventListener('click', function (item) {
-    //кастыль 
+    //исправить кастыль
     if (themes.classList.toggle('themes--dark')) {
 
         body.classList.toggle('dark-theme');
@@ -58,13 +58,3 @@ themes.addEventListener('click', function (item) {
         })
     }
 });
-
-
-// themes.querySelector(".themes").addEventListener('click', function () {
-//     this.forEach((item) => {
-//         var color = "#6A78A0"
-//         item.querySelectorAll(".title-lite").style.setProperty('--bc-color', color);
-//         var color1 = "#fff"
-//         item.querySelectorAll(".title-lite").style.setProperty('--bc-color1', color1)
-//     })
-// })
