@@ -46,7 +46,6 @@ squreInput.addEventListener('input', function () {
 
 function calc() {
     let totalPrice = basePrice * parseInt(squreRenge.value);
-    console.log(totalPrice)
 
 
     for (const radio of radioType) {

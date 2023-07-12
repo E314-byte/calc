@@ -8,7 +8,7 @@ body {
 	background-image: url('https://bitovkileto.ru/wp-content/uploads/d/3/c/d3c5f2b64b0680a52d2d271d85f3268c.jpeg');
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: cover; 
+	background-size: cover;
 }
 
 img {
@@ -17,7 +17,7 @@ img {
 }
 
 
-.box-shadows{
+.box-shadows {
 	box-shadow: 0px 0px 100px -20px #fff;
 	border-radius: 10px;
 	overflow: hidden;
@@ -76,6 +76,7 @@ img {
 	.social-icon-link {
 		margin-right: 15px;
 		margin-bottom: 15px;
+
 	}
 }
 
@@ -115,8 +116,7 @@ h6 {
 	text-align: center;
 }
 
-.heading-desc {
-}
+.heading-desc {}
 
 .calc-section {
 	padding: 40px 50px;
@@ -125,7 +125,7 @@ h6 {
 
 .calc-section:nth-child(odd) {
 	padding: 40px 50px;
-	background-color: #E1D5C8 ;
+	background-color: #E1D5C8;
 }
 
 .calc-title-light {
@@ -139,7 +139,7 @@ h6 {
 	vertical-align: middle;
 }
 
-.title__inline + .title__inline {
+.title__inline+.title__inline {
 	margin-left: 10px;
 }
 
@@ -281,7 +281,7 @@ input::-webkit-inner-spin-button {
 	visibility: hidden;
 }
 
-.scope{
+.scope {
 	display: flex;
 	justify-content: space-between;
 }
@@ -301,6 +301,7 @@ input::-webkit-inner-spin-button {
 .rooms-div {
 	border-radius: 5px;
 }
+
 .rooms-radio-real {
 	opacity: 0;
 	appearance: none;
@@ -309,7 +310,7 @@ input::-webkit-inner-spin-button {
 	margin: 0;
 }
 
- 
+
 
 
 .rooms-radio-fake {
@@ -325,6 +326,6 @@ input::-webkit-inner-spin-button {
 	border-radius: 5px;
 }
 
-.rooms-radio-real:checked + .rooms-radio-fake {
-		background-color: #cabdaf;
+.rooms-radio-real:checked+.rooms-radio-fake {
+	background-color: #cabdaf;
 }

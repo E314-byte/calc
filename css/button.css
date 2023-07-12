@@ -1,29 +1,32 @@
-.btn{
+.button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.btn {
     content: " ";
-    width: 28px;
-    height: 28px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 5px;
     border: none;
     background-image: url('../img/icon/eye.png');
     background-size: cover;
-    /* background: ; */
-    
-    margin-left: 1200px;
-    margin-bottom: 40px;
-
+    margin: 0 5px 0 5px;
     cursor: pointer;
 }
 
-.themes{
+
+.themes {
     content: " ";
-    width: 28px;
-    height: 28px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 5px;
     border: none;
     background-image: url('../img/icon/moon.png');
     background-size: cover;
-    /* background: ; */
-
-    margin-left: 1200px;
-    margin-bottom: 40px;
+    margin: 0 5px 0 5px;
 
     cursor: pointer;
 }
@@ -31,23 +34,20 @@
 /* может стоит перенести в файл themes.css, там же тёмное? */
 .themes--dark {
     content: " ";
-    width: 28px;
-    height: 28px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 5px;
     border: none;
     background-image: url('../img/icon/sun.png');
     background-size: cover;
-    /* background: ; */
-
-    margin-left: 1200px;
-    margin-bottom: 40px;
-
+    margin: 0 5px 0 5px;
     cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover,
+.themes:hover,
+.themes--dark:hover {
     opacity: 0.8;
-}
-
-.btn:active {
-    transform: scale(0.95);
+    transform: scale(1.2);
+    transition: transform .5s;
 }
