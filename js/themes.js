@@ -7,11 +7,8 @@ const rang = document.querySelector('.styled-slider');
 
 const checkbox = document.querySelectorAll('.checkbox');
 const radio = document.querySelectorAll('.title-lite');
-console.log(radio);
-
 
 const themes = document.querySelector('.themes');
-// const themesImg = document.querySelector('.themes span');
 
 
 themes.addEventListener('click', function (item) {
