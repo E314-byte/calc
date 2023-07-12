@@ -5,6 +5,12 @@
      opacity: 0;
  }
 
+ div {
+     --bc-color: #c6b9ab;
+     --bc-color1: rgb(249, 221, 201);
+ }
+
+
  /* для элемента div связанного с .custom-radio */
  .radio+div {
      display: inline-flex;
@@ -30,29 +36,29 @@
 
  /* стили при наведении курсора на радио */
  .radio:not(:disabled):not(:checked)+div:hover::before {
-     border-color: #c6b9ab;
+     border-color: var(--bc-color);
  }
 
  /* стили для активной радиокнопки (при нажатии на неё) */
  .radio:not(:disabled):active+div::before {
-     background-color: #c6b9ab;
-     border-color: #c6b9ab;
+     background-color: var(--bc-color);
+     border-color: var(--bc-color);
  }
 
  /* стили для радиокнопки, находящейся в фокусе */
  .radio:focus+div::before {
-     box-shadow: 0 0 0 0.2rem rgb(249, 221, 201);
+     box-shadow: 0 0 0 0.2rem var(--bc-color1);
  }
 
  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
  .radio:focus:not(:checked)+div::before {
-     border-color: #c6b9ab;
+     border-color: var(--bc-color);
  }
 
  /* стили для радиокнопки, находящейся в состоянии checked */
  .radio:checked+div::before {
-     border-color: #c6b9ab;
-     background-color: #c6b9ab;
+     border-color: var(--bc-color);
+     background-color: var(--bc-color);
      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
  }
 
